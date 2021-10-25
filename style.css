@@ -1,0 +1,77 @@
+body{
+  background-color: black;
+}
+/*circle*/
+#circle{
+  width: 400px;
+  height: 400px;
+  margin: 0 auto;
+  top: 120px;
+  position: relative ;
+  border-radius:50%;
+  border: 5px solid yellow;
+  animation-name: circle;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction:alternate-reverse;
+}
+
+@keyframes circle{
+ 0%{border-color:red ;
+  transform:scale(1);
+}
+ 25%{
+   border-color: blue;
+   transform:scale(1.1)
+ }
+ 50%{
+   border-color:gray;
+   transform:scale(1.2)
+ }
+ 75%{border-color: pink;
+    transform:scale(1.3)}
+ 100%{
+   border-color: ivory;
+   transform: scale(1.4);
+ }
+}
+/*============================*/
+/*>>>>>>>>>square<<<<<<<<<<<*/
+#square{
+  width: 60px;
+  height: 60px;
+  position: relative;
+  border:5px solid white;
+  border-color: red;
+  margin: 0 auto;
+  top:140px ;
+  animation-name: square;
+  animation-duration: 5s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+
+@keyframes square{
+  0%{
+    transform: rotate(0deg);
+   }
+   25%{
+    border-color: pink;
+    border-width: 10px;
+   }
+   50%{
+    border-color: yellow;
+    border-width: 20px;
+   }
+   75%{
+    border-color: blue;
+    border-width: 45px;
+   }
+   100%{
+    transform: rotate(360deg);
+    border-width: 5px;
+   }
+}
