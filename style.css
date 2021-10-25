@@ -45,7 +45,7 @@ body{
   border:5px solid white;
   border-color: red;
   margin: 0 auto;
-  top:140px ;
+  top:145px ;
   animation-name: square;
   animation-duration: 5s;
   animation-timing-function: ease-in;
